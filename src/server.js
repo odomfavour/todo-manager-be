@@ -39,7 +39,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-// ✅ Routes
+// Routes
 app.get("/", (req, res) => {
   res.send("Todo API is running...");
 });
