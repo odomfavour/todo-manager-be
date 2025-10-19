@@ -28,7 +28,7 @@ const swaggerOptions = {
     servers: [
       {
         url: process.env.NODE_ENV === "production"
-          ? "https://todo-api.onrender.com/api"
+          ? "https://todo-api-h1dl.onrender.com/api"
           : "http://localhost:5000/api",
       },
     ],
