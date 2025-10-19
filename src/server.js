@@ -12,7 +12,8 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin: "*", // allow everywhere
+    credentials: false,}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
